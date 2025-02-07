@@ -1,8 +1,59 @@
-# React + Vite
+# [Yeah idk] Interactive Web App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive web application that creates a playful experience with expanding buttons, custom responses, and shareable personalized links.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Interactive button animations
+- Dynamic text responses
+- Expanding "Yes" button
+- Personalization with custom names
+- Shareable unique URLs
+- Dreamy, romantic UI theme
+
+## 🛠 Tech Stack
+
+- React 18 + Vite
+- React Router DOM
+- Framer Motion
+- CSS3 with animations
+
+## 🚀 Getting Started
+
+```bash
+# Clone repository
+git clone https://github.com/its-nott-me/Kabutar.git
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+```
+
+Visit `http://localhost:3000`
+
+## 🎨 Customization
+
+### Text Responses
+Modify the `noTexts` array in `App.jsx`:
+```javascript
+const noTexts = [
+  'No',
+  'pleaseee',
+  // Add your responses
+];
+```
+
+## 📦 Build & Deploy
+
+```bash
+# Create production build
+npm run build
+```
+
+## 📝 License
+
+MIT License
+
+---
