@@ -172,7 +172,7 @@ function App() {
           )}
         </div>
       ) : (
-        <h2 className='styled question' style={{fontSize: "300%"}}>(づ๑•ᴗ•๑)づ <br/>❤♡I love you too♡❤</h2>
+        <h2 className='styled question' id="footer" >(づ๑•ᴗ•๑)づ <br/>❤♡I love you too♡❤</h2>
       )}
 
       {yesPressed && (

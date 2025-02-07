@@ -137,7 +137,7 @@ body {
 .display-gif {
   max-width: 100%;
   height: auto;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   border: 5px solid #E8E1FF;
   border-radius: 15px;
   box-shadow: 0 8px 25px rgba(155, 107, 157, 0.15);
@@ -361,11 +361,23 @@ button, input, a {
   opacity: 1;
 }
 
+#footer{
+  font-size: 300%;
+}
+
 @media (max-width: 768px) {
   .no-button {
     min-width: 150px;
     font-size: 0.9rem;
     padding: 10px 16px;
+  }
+
+  .question{
+    font-size: 46px;
+  }
+  
+  #footer{
+    font-size: 200%;
   }
 }
 
@@ -378,5 +390,70 @@ button, input, a {
     min-width: 120px;
     font-size: 0.8rem;
     padding: 8px 12px;
+  }
+}
+
+
+/* Height-specific adjustments */
+@media (max-height: 600px) {
+  .display-gif {
+    max-height: 40vh;
+    margin: 10px 0;
+  }
+
+  .question {
+    margin-bottom: 10px;
+  }
+
+  .button-container {
+    margin-top: 10px;
+  }
+}
+
+/* Landscape mode */
+@media (max-height: 480px) and (orientation: landscape) {
+  .container {
+    padding: 10px;
+  }
+
+  .question {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    margin-bottom: 8px;
+  }
+
+  .display-gif {
+    max-height: 35vh;
+    margin: 8px 0;
+    margin-bottom: 0;
+  }
+
+  .generate-url-button {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+/* Safe area insets for notched phones */
+@supports (padding: max(0px)) {
+  .container {
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+  }
+
+  .generate-url-button {
+    bottom: max(20px, env(safe-area-inset-bottom));
+    right: max(20px, env(safe-area-inset-right));
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .button {
+    min-height: 44px;
+  }
+
+  .generate-url-button {
+    min-height: 44px;
   }
 }
