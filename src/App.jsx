@@ -121,8 +121,8 @@ function App() {
   const title = yesPressed ? `${name1}${name2}` : 'Will you be my Valentine?';
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [inputName1, setInputName1] = useState('Name1');
-  const [inputName2, setInputName2] = useState('Name2');
+  const [inputName1, setInputName1] = useState('');
+  const [inputName2, setInputName2] = useState('');
   const [urlGenerated, setUrlGenerated] = useState('');
   const [showCopiedMessage, setShowCopiedMessage] = useState(false);
 
